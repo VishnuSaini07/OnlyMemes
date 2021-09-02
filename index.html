@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <title>OnlyMemes</title>
+
+  <style>
+    .item {
+      transition: .5s ease-in-out;
+    }
+    .item:hover {
+      filter: brightness(80%);
+    }
+  </style>
+
+</head>
+<body>
+  <nav id="nav">
+    <div class="menu">
+      <label class="button bars" for="check"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="check">
+      <div class="logo"><a href="#"><span>Only</span>Memes</a></div>
+      <ul>
+        <label class="button cancel" for="check"><i class="fas fa-times"></i></label>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div>
+        <input type="checkbox" class="checkbox" id="theme">
+        <label for="theme" class="label">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row mt-4">
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img1.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img1.jpg" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img2.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img2.jpg" width="100%" height="100%">
+        </a>
+      </div>
+            
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img3.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img3.jpg" width="100%" height="100%">
+        </a>
+      </div>
+            
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img4.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img4.jpg" width="100%" height="100%">
+        </a>
+      </div>
+            
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img5.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img5.jpg" width="100%" height="100%">
+        </a>
+      </div>
+            
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img6.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img6.jpg" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img7.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img7.jpg" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img8.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img8.jpg" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/img9.jpg" class="fancybox" data-fancybox="gallery1">
+          <img src="images/img9.jpg" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/vid1.mp4" class="fancybox" data-fancybox="gallery1">
+          <video src="images/vid1.mp4" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/vid2.mp4" class="fancybox" data-fancybox="gallery1">
+          <video src="images/vid2.mp4" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/vid3.mp4" class="fancybox" data-fancybox="gallery1">
+          <video src="images/vid3.mp4" width="100%" height="100%">
+        </a>
+      </div>
+
+      <div class="item col-sm-6 col-md-4 mb-3">
+        <a href="images/vid4.mp4" class="fancybox" data-fancybox="gallery1">
+          <video src="images/vid4.mp4" width="100%" height="100%">
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  </section>
+  <section id="about"></section>
+  <section id="contact"></section>
+
+  <div class="scrollToTop">
+    <a href="#nav"><i class="fas fa-arrow-up"></i></a>
+  </div>
+
+  <script>
+    const checkbox = document.getElementById('theme');
+    const nav = document.getElementById('nav');
+    const logo = document.querySelector('.logo a');
+    const ulLi = document.querySelector('.a');
+
+    checkbox.addEventListener('change', ()=> {
+      document.body.classList.toggle("dark");
+      nav.classList.toggle("dark");
+      logo.classList.toggle("dark");
+    });
+  </script>  
+
+  
+</body>
+</html>
